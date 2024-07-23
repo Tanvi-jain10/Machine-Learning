@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import sklearn.linear_model as linear_model
+
+# Load the data
+df = pd.read_csv("C:\\Users\\acer\\Downloads\\canada_per_capita_income (1).csv")
+print(df)
+
+reg=linear_model.LinearRegression()
+reg.fit(df[['area','bedrooms','age']],df.price)
+pridicted_values=reg.predict([[1000,6,12]])
+print(pridicted_values)
+print(reg.coef_)
+print(reg.intercept_)
