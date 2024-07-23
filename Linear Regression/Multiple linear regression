@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import sklearn.linear_model as linear_model
 
 # Load the data
-df = pd.read_csv("C:\\Users\\acer\\Downloads\\canada_per_capita_income (1).csv")
+df = pd.read_csv("C:\\Users\\acer\\Downloads\\property.csv")
 print(df)
 
 reg=linear_model.LinearRegression()
