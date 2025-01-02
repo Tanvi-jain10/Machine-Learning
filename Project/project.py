@@ -8,7 +8,7 @@ from sklearn.svm import SVC
  
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor 
-file_path="/Users/anishjain/Downloads/Large_Dataset_With_Null_Values.csv"
+file_path="/Users/anishjain/Downloads/annualincome.csv"
 df=pd.read_csv(file_path)
 print(df.head())  # starting 5 rows 
 print(df.tail())  # ending 5 rows
